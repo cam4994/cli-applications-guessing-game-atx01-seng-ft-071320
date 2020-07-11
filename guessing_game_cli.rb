@@ -2,7 +2,7 @@
 def run_guessing_game
   random = rand(1..6)
   puts "Please guess a number between 1 and 6"
-  guess = gets.strip
+  guess = gets.chomp
   if random == guess 
     puts "You guessed the correct number!"
   elsif guess == "exit"
